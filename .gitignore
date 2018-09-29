@@ -1,0 +1,30 @@
+# archives
+*.7z
+*.zip
+
+# logs
+*.log
+
+# model source
+*.fbx
+*.blockdef.xml
+*.xml
+*.hkt
+*.hkt.fbx
+*.hkt.mwm
+*.txt
+*.hkt.filter.log
+*.hkt.convert.log
+*.mwm.log
+
+#vs stuff
+*.sln
+*.csprog
+bin
+obj
+Properties
+
+# temp
+*.tmp	
+
+
