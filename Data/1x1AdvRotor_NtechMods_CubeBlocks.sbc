@@ -178,8 +178,8 @@
       <UseModelIntersection>true</UseModelIntersection>
       <Components>
         <!-- top part  cost is not balance-only issue, rotor "overtravel" issue when rotation limits are set is reduced by adding more weight into top part -->
-        <Component Subtype="SteelPlate" Count="1" />
-        <Component Subtype="SmallTube" Count="1" />
+        <Component Subtype="SteelPlate" Count="12" />
+        <Component Subtype="SmallTube" Count="6" />
       </Components>
       <CriticalComponent Subtype="SteelPlate" Index="0" />
       <MountPoints>
