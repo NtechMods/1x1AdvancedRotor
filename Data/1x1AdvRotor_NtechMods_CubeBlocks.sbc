@@ -293,6 +293,43 @@
       <BuildTimeSeconds>8</BuildTimeSeconds>
       <PCU>100</PCU>
       <IsAirTight>false</IsAirTight>
+    </Definition> 
+
+	<Definition>
+      <Id>
+        <TypeId>MotorAdvancedRotor</TypeId>
+        <SubtypeId>SBDualHeadRotorLBBase</SubtypeId>
+      </Id>
+      <DisplayName>1x1 Advanced Rotor Dual Head Part</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\RotorPart.dds</Icon>
+      <Description>Description_RotorPart</Description>
+      <CubeSize>Small</CubeSize>
+      <GuiVisible>false</GuiVisible>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="9" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\SBDualHeadRotorLBBase.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <!-- top part  cost is not balance-only issue, rotor "overtravel" issue when rotation limits are set is reduced by adding more weight into top part -->
+        <Component Subtype="SteelPlate" Count="12" />
+        <Component Subtype="SmallTube" Count="6" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\SBDualHeadRotorLBBase.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>LBDualHeadRotor</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>8</BuildTimeSeconds>
+      <PCU>100</PCU>
+      <IsAirTight>false</IsAirTight>
     </Definition>
 <!-- What category they show in on g-menu -->
  <CategoryClasses>
