@@ -35,6 +35,7 @@
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\1x1AdvStator_Constr1.mwm" />
       </BuildProgressModels>
       <BlockPairName>1x1AdvMotorStator</BlockPairName>
+      <Description>A small compact conveyored motor that only allows ore and ammo passage.</Description>
       <MirroringY>Z</MirroringY>
       <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
@@ -131,6 +132,7 @@
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\1x1AdvStatorElev_Constr1.mwm" />
       </BuildProgressModels>
       <BlockPairName>1x1AdvMotorStatorDual</BlockPairName>
+      <Description>A small compact dual head conveyored motor that only allows ore and ammo passage.</Description>
       <MirroringY>Z</MirroringY>
       <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
@@ -233,6 +235,7 @@
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\LBDualHeadStator_Constr1.mwm" />
       </BuildProgressModels>
       <BlockPairName>1x1AdvMotorStatorDual</BlockPairName>
+      <Description>A dual headed conveyored motor that only allows ore and ammo passage.</Description>
       <MirroringY>Z</MirroringY>
       <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
@@ -324,6 +327,7 @@
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\SBDualHeadRotorLBBase.mwm" />
       </BuildProgressModels>
       <BlockPairName>LBDualHeadRotor</BlockPairName>
+      <Description>Don't attach this part to large grid rotor, causes much clang!!!</Description>
       <MirroringY>Z</MirroringY>
       <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
