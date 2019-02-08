@@ -1,5 +1,44 @@
 <?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<!-- Research Blocks -->
+  <ResearchBlocks> 
+    <ResearchBlock xsi:type="ResearchBlock"> <!-- put here all blocks you want in a specific group -->
+      <Id Type="MyObjectBuilder_MotorAdvancedStator" Subtype="Small1x1AdvStator" /> 
+      <UnlockedByGroups>
+        <GroupSubtype>22</GroupSubtype>
+        <GroupSubtype>27</GroupSubtype>
+      </UnlockedByGroups>
+    </ResearchBlock>
+    <ResearchBlock xsi:type="ResearchBlock"> 
+      <Id Type="MyObjectBuilder_MotorAdvancedStator" Subtype="Small1x1AdvStatorDual" />
+      <UnlockedByGroups>
+        <GroupSubtype>22</GroupSubtype>
+        <GroupSubtype>27</GroupSubtype>
+      </UnlockedByGroups>
+    </ResearchBlock>
+    <ResearchBlock xsi:type="ResearchBlock"> 
+      <Id Type="MyObjectBuilder_MotorAdvancedStator" Subtype="LBDualHeadStator" />
+      <UnlockedByGroups>
+        <GroupSubtype>22</GroupSubtype>
+        <GroupSubtype>27</GroupSubtype>
+      </UnlockedByGroups>
+    </ResearchBlock>
+   </ResearchBlocks>
+  
+<!-- ResearchGroups --> <!-- You only need research groups if your blocks are going to have their own sublevels -->
+  <ResearchGroups>
+    <ResearchGroup xsi:type="ResearchGroup">
+      <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="DualHeadRotors" /><!-- the subtype can be anything you want, it is used in the UnlockedByGroups tag -->
+      <Members> <!-- place all blocks here that will be in subgroups of any of your mods, or subgroups of vanilla blocks. -->
+       <BlockId Type="MyObjectBuilder_MotorAdvancedStator" Subtype="Small1x1AdvStatorDual" />
+       <BlockId Type="MyObjectBuilder_MotorAdvancedStator" Subtype="Small1x1AdvStator" />
+       <BlockId Type="MyObjectBuilder_MotorAdvancedStator" Subtype="LBDualHeadStator" /> 
+      </Members>
+    </ResearchGroup>
+  </ResearchGroups>
+
+
 <CubeBlocks>
 
     <Definition xsi:type="MyObjectBuilder_MotorStatorDefinition">
@@ -9,7 +48,7 @@
       </Id>
       <DisplayName>1x1 Advanced Rotor</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\1x1AdvRotor.dds</Icon>
-      <Description>Description_Rotor</Description>
+      <Description>This Rotor has a small conveyor pass through, and only allows ammo and small items through.</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="1" />
@@ -68,7 +107,7 @@
       </Id>
       <DisplayName>1x1 Advanced Rotor Part</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\RotorPart.dds</Icon>
-      <Description>Description_RotorPart</Description>
+      <Description>This is the head part of the 1x1 advanced rotor, and only allows passage of small items.</Description>
       <CubeSize>Small</CubeSize>
       <GuiVisible>false</GuiVisible>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -107,7 +146,7 @@
       </Id>
       <DisplayName>1x1 Advanced Rotor DualHead</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\DualHeadRotor.dds</Icon>
-      <Description>Description_Rotor</Description>
+      <Description>This dual head rotor base also has two small conveyor ports to allow small items to be conveyored.</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="1" />
@@ -170,7 +209,7 @@
       </Id>
       <DisplayName>1x1 Advanced Rotor Dual Head Part</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\RotorPart.dds</Icon>
-      <Description>Description_RotorPart</Description>
+      <Description>This is the dual rotor head with small conveyor ports to allow passage of small items.</Description>
       <CubeSize>Small</CubeSize>
       <GuiVisible>false</GuiVisible>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -210,7 +249,7 @@
       </Id>
       <DisplayName>1x1 Advanced Rotor DualHead</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\DualHeadRotor.dds</Icon>
-      <Description>Description_Rotor</Description>
+      <Description>This is the large grid Dual head rotor that has two conveyor connections on the base, and two conveyor connections on the head on either side.</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="1" />
@@ -235,7 +274,6 @@
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\LBDualHeadStator_Constr1.mwm" />
       </BuildProgressModels>
       <BlockPairName>1x1AdvMotorStatorDual</BlockPairName>
-      <Description>A dual headed conveyored motor that only allows ore and ammo passage.</Description>
       <MirroringY>Z</MirroringY>
       <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
@@ -268,7 +306,7 @@
       </Id>
       <DisplayName>1x1 Advanced Rotor Dual Head Part</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\RotorPart.dds</Icon>
-      <Description>Description_RotorPart</Description>
+      <Description>This is the large grid dual head advanced rotor head, which allows conveyor connections on either side.</Description>
       <CubeSize>Large</CubeSize>
       <GuiVisible>false</GuiVisible>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -305,7 +343,6 @@
       </Id>
       <DisplayName>1x1 Advanced Rotor Dual Head Part</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\RotorPart.dds</Icon>
-      <Description>Description_RotorPart</Description>
       <CubeSize>Small</CubeSize>
       <GuiVisible>false</GuiVisible>
       <BlockTopology>TriangleMesh</BlockTopology>
