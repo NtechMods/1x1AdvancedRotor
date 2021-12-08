@@ -98,6 +98,7 @@
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>100</PCU>
       <GuiVisible>false</GuiVisible>
+      <RotorType>Rotor</RotorType>
       <IsAirTight>false</IsAirTight>
     </Definition>
     <Definition>
@@ -200,6 +201,7 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>100</PCU>
+      <RotorType>Rotor</RotorType>
       <IsAirTight>false</IsAirTight>
     </Definition>
     <Definition>
@@ -297,6 +299,7 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>100</PCU>
+      <RotorType>Rotor</RotorType>
       <IsAirTight>false</IsAirTight>
     </Definition>
     <Definition>
